@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>Imagem se Movendo</title>
     <style>
         body {
             display: flex;
@@ -12,9 +12,12 @@
             align-items: center;
             height: 100vh;
             margin: 0;
+            overflow: hidden;
+            /* Evitar barras de rolagem */
         }
 
         img {
+            position: absolute;
             max-width: 30%;
             height: auto;
         }
@@ -22,7 +25,36 @@
 </head>
 
 <body>
-    <img src="image.png" alt="Descrição da imagem">
+    <img src="media/image.png" alt="Descrição da imagem" id="dvdLogo">
+
+    <script>
+        const dvdLogo = document.getElementById('dvdLogo');
+        let posX = 100;
+        let posY = 100;
+        let velX = 2;
+        let velY = 2;
+        const screenWidth = window.innerWidth;
+        const screenHeight = window.innerHeight;
+
+        function moveLogo() {
+            posX += velX;
+            posY += velY;
+
+            if (posX + dvdLogo.offsetWidth >= screenWidth || posX <= 0) {
+                velX = -velX; // Inverte a direção horizontal
+            }
+            if (posY + dvdLogo.offsetHeight >= screenHeight || posY <= 0) {
+                velY = -velY; // Inverte a direção vertical
+            }
+
+            dvdLogo.style.left = `${posX}px`;
+            dvdLogo.style.top = `${posY}px`;
+
+            requestAnimationFrame(moveLogo);
+        }
+
+        moveLogo();
+    </script>
 </body>
 
 </html>
