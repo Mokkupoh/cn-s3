@@ -9,7 +9,7 @@ Observações:
 
 ![alt text](ignore-md-images/image-2.png)
 
-* É necessário que as configurações de bloqueio esteja todas desmarcadas com o intuito de permitir acesso aos itens(em URL pública) que vamos efetuar o upload posteriormente.
+* É necessário que as configurações de bloqueio estejam todas desmarcadas com o intuito de permitir acesso aos itens(em URL pública) que vamos efetuar o upload posteriormente.
 
 ![alt text](ignore-md-images/image-3.png)
 
