@@ -17,6 +17,20 @@ Observações:
 
 ![alt text](ignore-md-images/image-4.png)
 
+## Upando arquivos para o Amazon S3
+
+* Baixe os arquivos do repositório e extraia em algum local do seu computador.
+
+![alt text](ignore-md-images/image-5.png)
+
+* Na aba Objetos clique em "Carregar"
+
+![alt text](ignore-md-images/image-6.png)
+
+* Adicionar pasta e selecione a pasta que estão os arquivos do repositório
+
+![alt text](ignore-md-images/image-7.png)
+
 ## Como permitir que os arquivos seja acessados pela URL pública
 
 No menu de permissões vamos editar a política de bucket existente, na política vamos copiar e colar o JSON abaixo(lembre de alterar o nome do bucket):
